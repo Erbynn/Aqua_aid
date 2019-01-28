@@ -1,0 +1,508 @@
+\documentclass[12pt]{article}
+%\usepackage[margin=1in]{geometry}	% paper pargin
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}		% paper margin setting
+\usepackage[amsfonts, amsmath, amssymb]{}
+%\usepackage[none]{hyphenat}
+%\usepackage{fancyhdr}
+\usepackage{graphicx} % pictures
+\usepackage{float}
+\usepackage{chapterbib}
+%\usepackage[nottoc, notlot, notlof]{tocbibind}	% content creation
+
+% setting up layout  %%%
+%\pagestyle{fancy}
+%\fancyhead{}
+%\fancyfoot{}
+%\fancyhead[L]{ \slshape \MakeUppercase{\textit{{\footnotesize IoT Water Quality Monitoring System for Aquaculture}}}}
+% \fancyhead[R]{\slshape Student Name}
+%\fancyfoot[C]{\thepage}
+% \renewcommand{\headrulewidth}{0pt} removing the line
+
+\parindent 0ex %removing paragrapg space
+\renewcommand{\baselinestretch}{1.5}		%line spacing
+
+\begin{document}
+	%\chapter{Literature Review}
+	\begin{titlepage}
+		\begin{center}
+			%\vspace*{1cm}
+			%\Large{\textbf{UCC}}	\\ [5mm]
+			%\large {\textbf{Department of Computer Science}}  \\
+			\textsc{\Large University of Cape Coast}\\[1.5cm]
+			\textsc{\Large Cans}\\[0.5cm]		% text in small caps
+			\textsc{\large Department of Computer Science}\\[0.5cm]
+			\vfill
+			\line(1,0){400} \\ [1mm]
+			\large{\textbf{ IoT Water Quality Monitoring System }} \\ [3mm]
+			\small{\textbf{for Aquature Using Aduino}} \\ [1mm]
+			\line(1,0){400} \\ [2cm]
+			%\vfill
+			
+			\begin{minipage}{0.4 \textwidth}
+				\begin{flushleft} \large
+					\emph{Authors : } \\
+					John Kwesi \textsc{Erbynn} \\
+					Josiah \textsc{Kotey} \\
+					Isaac  \textsc{Duffour Agyen}
+				\end{flushleft}						
+			\end{minipage}
+			\begin{minipage}{0.4 \textwidth}
+				\begin{flushright} \large
+					\emph{Supervisor : } \\
+					Mr. Isaac K. \textsc{Armah} \\
+				\end{flushright}						
+			\end{minipage} \\[2cm]
+			
+			\small{\today} \\[2cm]
+			
+			\includegraphics[width=2.5cm]{ucclogo.jpg}\\[1cm]
+		\end{center}
+	\end{titlepage}		
+	
+	%\tableofcontents{}
+	
+	\thispagestyle{empty}	% removes header and footer 
+	\clearpage	% occupy a whole page	
+
+	
+	\setcounter{page}{1}		% starts page counting from intro
+	
+	
+	%\appendix 
+	
+	\begin{center}
+		\section*{CHAPTER ONE}	
+		\section*{INTRODUCTION}
+	\end{center}
+	
+	Water is the engine for all life and no lives can overview without water on this plane. In the course of recent decades, fish ponds in and around Ghana have slowly capitulated to a reasonable level of contamination. Using of chemical fertilizers and dumping of anything into ponds are the real essential types of fish pond pollution in Ghana.   It is a need to check the water of fish ponds regularly utilising agile technologies. Wiping out water pollution in fish ponds inside and out may appear as though an incredible idea however restricting its belongings when it happens is absolutely conceivable. The essential goal of this undertaking is to devise a strategy to screen the quality of fish pond water with an end goal to help in water pollution control in Ghana with the assistance of IoT. \\
+	
+	This project monitors the quality of water, interns of monitoring the level of water, the temperature of the water and its surrounding, the turbidity of the water (how clean the water is) as well as the PH levels of the water. So this system monitors all of these aspect and finally when all check have been completed, its sends the information or data as an SMS to notify the authorized personnel. The series of continuous measurements will be published on a website for further study.
+		\subsection*{Background to the study}	
+		Activities have been taken everywhere throughout the globe to create ventures dependent on testing water to help in controlling fish pond conditions. It may not be explicit to water contamination observing but rather comparative ideas are included. \\
+		
+		Libeliums Smart Water gadget screens the status of an aquarium's wellbeing in Europe. It explicitly screens parameters like pH, electro conductivity, oxidation/decrease potential (ORP) and temperature. A cloud based arrangement is created to help in observing information continuously giving a quick and successful response in the event of rising variations from the norm. \\
+		
+		A similar example to that of this project can be seen in the coastal water pollution monitoring initiative in the Gulf of Kachchh with the only difference being in terms of it having a much larger scope and vastly more expensive protocols deployed to counter the effects of the industrial development.	\\
+		
+		Locally, at the University of Cape Coast, there are numerous water quality checkers at the Department of Fisheries and Aquaculture necessary to screen the quality of water not explicitly water of fish ponds. \\
+		
+		Research indicates that projects of this nature are developed on a large scale with generous funding from reputable organizations. There is little indication of small-scale and inexpensive projects that have a similar role in places like marine jetties, cities and industrial rivers to preserve aquaculture and public health. By applying a strategic, cheap and methodical technique this project hopes to achieve this in an effort to sanitize our fish ponds.
+		
+		\subsection*{Evolution of internet of things (IoT)}
+			The internet of Things (IoT) is a revolutionary new concept that has the potential to turn virtually anything “smart”. A Thing in this context could be defined as an object such as a cardiac monitor to a temperature sensor. This extraordinary event has captured the attention of millions. Why is this so big today? So imagine a world where machines function without any notion of human interaction. A future where machines communicate with other machines and make decisions based on the data collected and all independent of an end user. IoT is determined as the network of environmental objects or items which includes devices, vehicles, buildings which are embedded with sensor, micro-controller, and network associativity. It enables these items to get together and interchange data to the various environment. \\
+			
+			To understand how this revolution took shape we have to travel back to the 1900’s with a profound prediction from a well renowned inventor Nicolas Tesla in which he stated that the world will be wirelessly connected to a single brain. Every invention starts with a simple thought, that’s all it takes to define history. Alan Turing, the inventor of the computer, spoke about machines having sensors and humans teaching the machines, what we know today as Artificial Intelligence (AI). Then came the World Wide Web (www), the flow of information that is available to the public and this was exactly what was missing to realise Teslas’ prediction. The term itself “internet of things” was coined in 1999 by Kevin Ashton for linking the idea of sensors with the internet. His definition of IoT was based on reinventing RFID as a networking technology by linking objects to the internet using the RFID tag.\\
+			
+			The IoT journey has taken over a century to see light and it will undoubtedly not stop here. By 2020 it says that 50 billion ‘things’ will be connected to the internet. In this guest, we tend to build a smart water quality checker.\\
+			
+			It might be difficult to see the significance of the IoT but every advancement made is to make everyday life simpler and safer. Examples of these are a baby monitor to keep track of a baby’s health in real time [6], an IoT for caregivers which collects behavioral data to improve care and a heart monitoring system that collects biometrics data to track an aging patient’s health. These are just a few examples of how IoT projects can improve the way of life. In this guest, we tend to build a smart water quality checker.\\
+			
+			\subsection*{Statement of Problem}
+			For the past recent years, the consumption of fishes in Ghana is on the rise. According to graphic.com.gh, Ghana consumes over 950,000 metric tons of fish annually, currently imports more than 60 per cent of its fish. While in 2016 the country imported 192,131.47 tons of fish, the figure increased by 2.57 per cent in 2017 to 197,063.45 tons.
+Expectedly, the value of fish imports also rose from \$131 million in 2016 to \$146 million in 2017, representing 11.22 per cent increase.     \\
+
+The government, in an effort to reduce fish imports and boost the country’s production, has begun the development of a commercially viable aquaculture industry. As one of the fastest growing food-producing sectors in the world, aquaculture holds abundant job creation opportunities, while addressing the fish production deficit.\\
+
+Imagine a device that screens the water and gives update of the chemical and physical properties. Water quality should be ensured so that no contaminants exceed levels that would affect the health of the fishes. A simplified technical procedure for monitoring and assessing water quality in the aquaculture is been developed. The system utilises low cost, portable instrumentation that can largely be used by non-specialist fish farmers and reduces the need for costly analysis.\\
+
+		\subsection*{Purpose of the study}
+		The purpose of the study of this project is design and implement a water quality monitoring and notification system for fish farmers to determine the physio-chemical parameters of aqua-cultured sites such as fish ponds.
+		
+		\subsection*{Significant of the study}
+		The significant of the study will help fish farmers to have a serene ecosystem for the fishes and create awareness to prevent further harm to the pond.
+
+		\subsection*{Objective }
+		Water quality infers physical and compound that guarantee support and sustain the biological system in order to attain the wholesomeness of the water body under study. Water quality checking therefore comprises of periodic and systematic observations to enable its assessment covering physical, chemical and biological parameters. This project is designed to accomplish the following objectives: 
+			\begin{itemize}
+				\item 	monitoring the level of water.
+				\item 	checking the temperature of the water and its surrounding
+				\item   checking the turbidity of the water (how clean the water is)
+				\item	monitoring the PH levels of the water
+			\end{itemize}
+	
+	\subsection*{Limitations}
+	Cost: The components used for this project are very expensive. The cost involving in requesting these components are very high. This adds as a limitation to us for the flawlessness of this project.\\
+Time: Components used for the projects are not available in Ghana. Since majority of the project components must be shipped from abroad it takes a significant lot to get our reach. Because the department likewise has due date for finishing this task, so we couldn't meet our objective for making the project within the time frame.
+
+\subsection*{Project Justification}
+There has been an increment in the world’s demand for fishes. This occasion has required the need to take proper care of fish ponds. Due to change of water qualities brought about by high temperature, low water level, turbidity of the water among others. With more interest in fish farming there is a need to screen.\\
+
+In the course of recent years knowledge in electronics and computation has been utilised to solve present day problems. In the forefront of the electronics revolution has been internet of things. Sensors has been used to measure and control object. Maintaining water quality in fish pond can and has been automated. This solves the challenge brought about by the unreliability of climate changes thus need for water optimization. Fishes grown under controlled conditions tend to be healthier and thus give more yields. 
+
+\subsection*{Organisation of the study}
+The Content of the work is assembled into five parts.\\
+			\begin{itemize}
+				\item Chapter One gives the introduction to the project, background to the study, problem statement, the purpose of our study, the significance of the study, our project objectives, the justification of the, limitation of our study and the organisation of our project.
+				\item Chapter two is largely concentrated on the literature review.  In detailed the historical background of our project was examined. The project was dug into analysing the literature, theoretical perspective to present study and limitation relating to similar works of our project.
+				\item  Chapter three captures the methodology. Here we introduced our approach for developing the system. We reinstate our objective of the proposed system, some research or design questions, data collection instruments, sampling plan and data analysis. Furthermore, various methods of the test are administered 
+				\item Chapter four Chapter four is about implementation and testing. The findings are explained in detail and discussion is made along the development of this project.
+				\item •	Chapter five is about summary, conclusion and recommendation of the work.
+			\end{itemize}
+	
+	\begin{center}
+	
+	
+	
+	
+	\clearpage	% occupy a whole page	
+		\section*{CHAPTER TWO}
+		\section*{LITERATURE REVIEW}
+	\end{center}
+
+	\section*{Introduction}
+		Water quality monitoring will be defined as any effort made to acquire an understanding of the physical, chemical, and biological characteristics of water via data collection.  \\
+		
+During the first quarter of the present century, water treatment processes were produced and connected to guarantee that consumable water could be made accessible to the quickly developing urban populaces.  The rivers and other watercourses still received the waste discharges, but it was some time before they could no longer assimilate the residual wastes. Some of the challenges posed include, conversion of agriculture land and mangrove areas for aquaculture leads to salinization of surface water and agriculture and, besides causing pollution and diseases. Also, water flowing out of aquaculture ponds carries excessive nutrients, bacteria, pathogens, and other nutrients which harm the surroundings. \\
+
+With the rapid development of society and the economy, an expanding number of human exercises have gradually destroyed the aquaculture environment affecting the environment-physically, chemically and biologically. Physically a lot of pressure is on water, chemically it is polluted and biologically it introduces pathogens and diseases.  Aquaculture is the farming and husbandry of aquatic organisms (marine animals and plants) including fish, mollusks, crustaceans and plants in controlled environments. Aquaculture also varies according to the type of environment within which cultivation takes place and the species cultivated. The main environments are freshwater, brackish water, and marine. Aquaculture goes way beyond food production.  Some benefits derived from aquaculture are: the increased production of food for human consumption; the opening of commercially viable business opportunities; the creation of employment, especially in rural areas; increased national exports; and the substitution of imports by local production. Hatcheries provide bait and game for both sport and commercial fishermen. Although aquaculture serves many purposes, the most important one is to supply food for humans. It also supports the food chain at a lower level by producing algae and other plant organisms for animal feed.
+Therefore, measuring and monitoring the physio-chemical characteristics of the pond water and soil is extremely important to keep the check on the aquaculture conditions. Marine condition checking is a fundamental issue and has progressively pulled in a lot of innovative work consideration. During the past decade, various marine environment monitoring systems have been developed. \\
+
+Currently in our country, the water analysis is done in a traditional way by taking the samples from the water sources using research vessel and sent to the laboratory for investigation and analysis. This is expensive and time-consuming and has a low resolution both in time and space. (Pandian D. R. \& Dr. Mala K., 2015). This method is also cumbersome and there exist no feature of real time monitoring. Consequently, it not possible to send real time cautioning to the agriculturists to enable avoid any misfortunes.
+Internet of Things (IoT) driven water quality checking framework empowers remote and constant observing of information parameters, with applications in aquaculture. Aquaculture and fish farming represent one of the most attractive application areas for the IoT. The main concept behind every IoT technology and implementation is “Devices are integrated with the virtual world of internet and interact with it by tracking, sensing and monitoring objects and their environment “. IOT breaks the limit of traditional computer networks and establishes connections directly with objects in the physical world. The core concept of this phenomenon is that IOT allows for “things” to connect to the Internet. The IOT paradigms can play a significant role in aquaculture. The IOT driven water quality monitoring system employs networked by sensors to simultaneously collect multiple physiological signals and wireless connectivity to share or send gathered signals directly to the cloud diagnostic server and the users for further analysis and review. Further, the IOT enabled remote monitoring applications can significantly reduce labor, cost and time in long-term monitoring applications (Pandian D R, Dr. Mala K \& PG Scholar, 2014).  In the aquaculture monitoring environment, the IOT has emerged as one of the most powerful information gathering and analysis. In this paper, the core concept is based on IOT, the information sensed from the sensors are gathered and transmitted to the monitoring station through IOT. 
+With this chapter, the project focuses on some of the related works that have been exhibited in the past 19 years which has led to a successful justification on how monitoring water quality systems can be a powerful tool. 
+
+	%\section{Literature Review}
+	%\chapter{Literature Review}
+	\section*{Related Works}
+			\subsection*{Development and Test of Aquacultural Water Quality Monitoring System Based on Wireless Sensor Network}	
+This project presents a review on the implementation and design aquacultural water quality monitoring system which uses wireless sensor networks. Not developing a new system but also it analyzes of limitation of existing aquaculture water quality monitoring systems. This system uses sensor nodes to obtain data of water temperature, pH value and dissolved oxygen concentration through RS232 serial port, and present to users. According to the Author, The hardware platform of the sensor node is composed of a processing module, a sensor module, wireless communication and a power module. The processing module uses a MSP430F149 as the processing core. The sensor module uses PHG-96FS pH combination electrodes and DOG-96DS dissolved oxygen electrodes to measure water quality parameters. A signal conditioning circuit was designed to amplify and filter the weak signals to as to meet the requirement of input range of the A/D converter. The wireless communication module uses an RF905 RF chip and its periphery circuits to receive and send data.\\
+
+ The power module uses an 
+ LT1129-3.3 chip, an LT1129-5 chip, 
+ a Max660 chip and their periphery circuits to supply $3.3V$ and
+ $\pm5V$ 
+  voltage for the processing module, wireless communication and the sensor module. The system software consists of two parts, the node software and monitoring software. The node software, which is compiled using C Language in IAR Embedded Workbench, can complete data acquisition and processing, wireless transmission, and serial communication. A graphical interface monitoring software, which is compiled using $vb6.0$, 
+ was built to provide users with a visual image of real-time water quality parameters. The core idea behind was to obtain the correct and reliable data thus, minimizing errors rate in a wide range of water types. The results demonstrated that the average packet loss rate is $0.77\%$, and the relative errors of pH value, temperature and dissolved oxygen are less than $1.40\%$, $0.27\%$ and $1.69\%$ respectively. (Huang Jianqing, Wang Weixing \& Jiang Sheng, 2013).
+			\subsection*{Energy-efficient Automatic Monitoring System for Aquaculture based on Wireless Senor Network }
+				This project presents a review on how to build an automatic monitoring and control system of aquaculture using a WSN which is energy efficient. This system was adopted from an optimized protocol of centralized low-power hierarchical clustering (LEACH-C) for a WSN communication and frequency control aeration system based on a Programmable Logic Controller (PLC). In a LEACH-C communication protocol, cluster heads were selected according to the residual energy of each node by the base station with fixed power supply. From the actual control accuracy of the system, the changes in dissolved oxygen concentration was less than 0.02 mg/L than the value last time, and the corresponding node sent no data to its cluster head for saving energy. The test proved that the lifetime of a network adopted optimized LEACH-C protocol was 33.33\% longer than that of a network adopted conventional LEACH protocol. As the concentration increased, the aeration efficiency was gradually reduced. Therefore, the range of emergency oxygen was set from 4.5 to $5.5 mg/L$. Based on measured value of dissolved oxygen content from the wireless sensor networks, a PI-PID algorithm was used in controlling the concentration of dissolved oxygen in the water body. When the error was large, the use of a set of PI parameters could quickly narrow the error. In order to ensure the smooth switching of the two sets of parameters, a hysteresis switching area was set. This ensured the timeliness and efficiency in oxygen supply when the dissolved oxygen concentration in water was less than 4.5 mg/L, or more than 5.5 mg/L. (Jiang Jianming, Shi Guodong \& Li Zhengming, July 2013). The advantage of this system was to save nearly half of the electricity and reduce the costs in labor as scale of aquaculture expands.
+			\subsection*{Water Quality Monitoring System Using Zigbee Based Wireless Sensor Network}	
+				This paper describes the application of Zigbee Based wireless sensor networks (WSN) for a water quality monitoring. According to the author it was composed of a number of sensor nodes with a networking capability that can be deployed for continuous monitoring purpose. Zigbee is a technology of data transfer in wireless networks with low energy consumption and it is designed for systems such as multithermal control systems, alarm systems and lighting control, home automatic devices. Zigbee is more economical than Wi-Fi and Bluetooth as it consumes less energy. According to the author, the system featured chemical substances, conductivity, dissolved oxygen, pH level, turbidity and temperature to be measured in the real time by the sensors that send the data to the control. The base monitoring station consists of a Zigbee module which was programmed as coordinator the receives data sent from the sensor node and sent to the GUI using the RS 232 protocol. The software design part was developed using Borland $C++$ Builder programming that is able to interact with the hardware at the base station. The sensors were set for connection to the coordinator with one of them linked through the router to further extend the monitoring distance. A connection was created from the coordinator(router) displaying the data parameters on the GUI screen. The important fact of this system was the  implementation of high power Zigbee based WSN for water quality monitoring system offering low power consumption with high reliability is presented. (Zulhani Rasin \& Mohd Rizal Abdullah, 2009)
+				
+			\subsection*{Real-time remote monitoring system for aquaculture water quality}
+			This paper presents a view on the development of a real-time based remote monitoring system for aquaculture water quality. This system was a multi-parameter monitoring system based on wireless network was set up to achieve remote real-time monitoring of aquaculture water quality, in order to improve the quality of aquaculture products and solve such problems as being difficult in wiring and high costs in current monitoring system. According to the author, the components used were solar cells and lithium cells for power supply, sensor detection part, controller, data transmission part, remote monitoring center and aerator.  The sensor detection part comprises the YCS-2000 dissolved oxygen sensor, pH electrode, Pt1000 temperature sensor and ammonia nitrogen sensor to monitor the parameters of aquaculture water quality.  The controller is made up of STM32F103 chip and its peripheral circuits responsible for processing data acquired by the sensors and controlling the whole system to work properly in order.  The data transmission part is composed of Zigbee wireless data transmission module and GPRS module, which transmits the parameters detected by the sensors to the remote monitoring center.  The remote monitoring center is made up of upper computer, which can realize real-time display, saving, analysis of monitored water quality data.  If the controller detects that the dissolved oxygen concentration is lower than the preset lower limit, it will send instructions to start up aerator.  When it detects that the dissolved oxygen concentration is higher than the preset upper limit, it shuts down the aerator. The core concept was based on reducing labor intensity, improving the quality of aquatic products and the protection of water environment. (Luo H. P., Li G. L., Peng W. F., Song J. \& Bai Q. W., 2015)
+			
+				\subsection*{Automatic monitoring \& Reporting of water quality by using WSN Technology and different routing methods}
+				This paper describes the different data routing techniques and WSN technology for checking the water data and furthermore gives security there is no loss of data, because of which it is possible to control water pollution and gives appropriate water resource management. The Design of Wireless sensor based on Zigbee and arm7. The system provides the online auto monitoring of water temperature, turbidity, water level, and salinity value environment of an artificial lake by using Zigbee modules. According to the author, the readings was collected through live graph as well as on LCD display. This system provides the reading automatically. The project focuses on the distinctive routing methods for monitoring water report. The monitoring system thus promises broad applicability prospects. (A. C. Khetre \& S. G.Hate, 2013).
+				
+				\subsection*{Air and water quality monitoring through IoT by using aquatic surface drone}
+					This project presents the review on the design and prototype of air and water quality monitoring through IOT by using aquatic surface drone. It describes air and water quality monitoring system on Aquatic form is based on Arduino platform and a multi cannel sensor variables are interconnected and in which the certain sensing parameters of temperature, humidity, gas and salt are measured and as well as ultrasonic sensor is measured with the underwater obstacle. The system was made up of Arduino UNOR3 board, five sensors for air and water quality monitoring in which variables are temperature, humidity, salt, gas, ultrasonic sensors have 2pins VCC, GND as common. The system was developed using Arduino IDE compiler using Embedded C language scripts to get the values from the sensors with the help of Arduino UNOR3 micro controller.  C programming was used to read the values from the sensors. This aim of this project to the aquatic form for air and water quality monitoring to develop the abilities of executed system to provide the information to a different sensing parameter for an extended area. (Ch. Pavan Kumar \& S. Praveenkumar, 2018).					
+							
+			\subsection*{Smart Device to monitor water quality to avoid pollution in IoT environment}
+				This project provides a review of a small device to monitor the quality of water to avoid pollution in IoT environment. The water quality monitoring sensors gather data from water, and forward that data to Arduino IDE for binary to digital conversion. The Arduino IDE forward that data to concentrator module through Zigbee module for remote transfer of data to the lab. The data concentrator which is located in each and every lake, send that data to the cloud configured server which is located in the testing laboratory. The department employees monitor this data remotely and securely provide this data to the requested users which is stored in the cloud. Water quality parameter data is stored in the cloud, will be securely provided to requested users using the cryptographic techniques. (Pandian D. R. \& Dr. Mala K, January, 2015)
+				
+				\subsection*{Application of GPRS in water quality monitoring system}
+					This project presents a review on the design and implementation of application of GPRS in water quality monitoring system. Water quality parameters were collected by multi-parameter water quality probe are transmitted to data processing and monitoring center through GPRS wireless communication network of mobile. According to the author, the multi parameter sensor was directly placed above the water level. GPRS and micro-controller was used to monitor data collected at any instant of time. The water quality parameters were monitored with using Visual Basic Software. It collects, transmit and processes data automatically for efficient production and economy benefits. (V. Ayishwarya Bharathi, S. M. Hasker, J. Indhu, M. Mohamed Azarudeen, G. Gowthami, R. Vinoth Rajan \& N. Vijayarangan, 2014)
+			
+			
+%				\subsection*{LabView based water temperature measurement \& control}
+%				This project presents a review of a proposed LabView based water temperature measurement and control. The components used were Relay((JQC-3FC\/T73), LM-35(Temperature Sensor), Op Amp IC- LM 358, Single Phase Transformer(AC230V/12-0-12V), Regulators( IC-7805,IC-7812), Heater(500w), Resistors(1k,100k,5k), Capacitors(1000uf, 470uf, 1uf, 0.1uf) and Diodes. The LM35 is one kind of commonly used temperature sensor that can be used to measure temperature with an electrical o/p comparative to the temperature (in °C). LabView was a program development application which basically has for four operations which were virtual instruments, front panel, block diagram, and icon and connector. The amplified output of the LM-35 is given in to the analog input card (AI0) of the compact RI0 chassis. When the measured temperature was above or below the desired temperature set in the LabVIEW relay controller was closed or open depending on the requirement. The output from the digital output card (DI 0) actuated the relay. The voltage generated by the relay contact made ON/OFF the heater. The temperature of the water was sensed by the LM-35. The main focus was to build a system that to measure and control temperature of water based on lab view. (Dayanidhi Yadav, Ranjeet Kumar \& Pankaj Kumar, 2018)
+				\subsection*{Multi-sensor based water quality monitoring in IoT environment}
+				This project describes the review of water quality monitoring in IoT environment using multiple sensor. The system consists of turbidity sensor, pH sensor, temperature sensor which was interfaces with Arduino mega board 2560. It used a microcontroller for collecting the data from the sensors. The system main concept was to design a low cost and robust system to monitor water quality problem for drinking water and online multisensory measurements at the local level were developed to assess the water contamination risk. (Arun Pandi T, Sakthi Vel S B, Veerappan, Senthil Rajan, Amutha Priya N, 2018)
+				
+				\subsection*{Design and development of IoT based framework for aquaculture}
+				This project presents an overview of an IoT based framework designed and developed for aquaculture. The architecture of the proposed system consists of number of sensor nodes spread across different ponds. The sensor nodes measured the physio-chemical parameters of the water and transmit the values to the nearby base station. The monitoring station was accessed by mobile devices, laptops or desktop wirelessly to make analysis and conclusion making and if the readings violate the threshold then a control command if sent to the base station for the physio-chemical parameters of water to be adjusted. A monitoring unit was developed using the Intel Analytics Cloud Platform where the sensor data get stored. (Zeenat Shareef \& SRN Reddy, 2016)
+				\subsection*{Design of Wireless Monitoring System for Environment Monitoring in Greenhouse Cultivation}		
+				A wireless monitoring system was set up in greenhouse at Xining city, Qinghai province, for the application of WSN in greenhouse environment monitoring. Within the system, one type of sensing node and one type of gateway were designed and developed. The system’s hardware platform was composed of a MSP430F149 micro-processor for data processing and controlling, an AM2301 sensor module for data measurements, an nRF905 transceiver module for data transmission and reception, and a GPRS module for remote data transmission. The wireless routing protocol, time synchronization algorithm and application program were compiled based on C programming language. A WEB mode remote data management platform was developed based on GPRS network, ASP.NET, HTML and C\#. The system solved the problems in greenhouse cultivation such as the informatization of greenhouse environment, provided a new method to guarantee safety and high-productivity.
+				
+				\subsection*{Design of an Aquaculture Monitoring System Based on Android and GPRS}	
+				Android, GPRS, Aquaculture, Remote monitoring and control.
+In order to promote the development of intelligent agriculture in China, we developed a wireless remote monitoring system of water quality parameters for aquaculture which is based on an Android mobile phone platform and GPRS communication technology. The system could accomplish the remote collection, storage, and management of water quality parameters such as the water level, temperature, potential of hydrogen (PH), and dissolved oxygen, and could also remotely control the work of water level valve and aerator. The signals of all the water quality sensors amplified by conditioning circuit were sent to the 12 high precision analog-digital (A/D) converter for analog-to-digital conversion, and then these were input to a 16-bit TI MSP430f149 microprocessor (MSP430). The microprocessor processed data and data was sent to General Packer Radio Service (GPRS) module. The GPRS module sent it to the remote server. The Android mobile phone and computer could access the server and monitor the water quality. As long as it was abnormal, the manager would send commands to the server. The server sent the command to the GPRS module on the water level valve and aerator. The GPRS module then sent them to MSP430. Based on the difference between the current value and the setpoint value, microprocessor run Proportional-Integral-Differential (PID) algorithm to control the work of water level valve and aerator, and then water quality reached the ideal state. The system performed well in Liyang, Jinagsu province, China. 
+% Compared with the data measured by handheld devices, measurement accuracy of water level, temperature, dissolved oxygen, PH in this system were within \mp1cm, \mp 0.5â„ƒ, \mp 0.2mg/L, and \mp 0.3, respectively. Furthermore, control precision of water level and dissolved oxygen could be within \pm 3cm and \mp0.3 mg/L, respectively. The effect was better than that of no control equipment and manual control. This system was suitable for the remote monitoring and control in aquaculture
+
+\subsection*{Intelligent monitoring system for aquaculture dissolved oxygen in pond based on wireless sensor network}
+In order to facilitate DO (dissolved oxygen) monitoring for a scaled aquaculture pond, a DO intelligent monitoring system was developed based on a wireless sensor network, which could realize distribution measurement, intelligent control, and centralized management. The system consists of a three-layer structure including data acquisition and control, water quality monitoring, and water management. The data acquisition and control layer was composed of data acquisition and control terminals, routing nodes, and a coordinator node based on ZigBee technology. They were deployed in the sensing area for an aquaculture pond's waters, and they constituted a wireless monitoring network for water quality environmental parameters by self organization to collect water quality parameters and adjust control devices. The water quality monitoring layer included a water quality monitoring terminal and a communication computer, which realized water quality supervision and aquaculture equipment intelligent control. The water quality management layer contained mainly a water quality management terminal, a system database, and a Web server end. The water quality management end was responsible for analysis and processing for the water quality data. The monitoring system concentrated wireless data acquisition, intelligent control, and centralized management for water quality parameters to improve scale aquaculture benefit and information management level. Aiming at low adaptive ability for conventional fuzzy PID controller, a variable universe fuzzy PID controller was proposed, which comprises an adjustment unit for expansion factors, variable universe fuzzy control unit and PID controller, the extension factor 
+%α1, α2 and β
+ for input and output domain of fuzzy control unit were adjusted constantly by an expansion factor regulating unit according to DO error and DO error change rate. PID controller parameters were tuned online by a variable universe fuzzy control unit to realize the purpose for DO adaptive control. According to the DO change characteristics with nonlinear, large delay and large inertia in a pond, the cascade control system was constituted by a variable universe fuzzy PID controller and an aerator speed PID controller. DO was the main controlled variable, and the aerator speed was the secondary controlled variable. If the DO concentration deviates from the setting value, a DO control loop will operate. Its output is the control loop input of the aerator speed, and the output of the aerator regulator changes the aerator speed to make DO concentration fast track the setting value of system target. The cascade control system can timely and accurately adjust the DO concentration to meet aquacultural needs. According to the changing trend of the DO data sequence for multiple pond monitoring sites, a combination grey DO forecasting model was constructed based on grey theory and weights to predict DO concentration and the feedback value for a variable universe fuzzy PID controller. This achieved DO prediction control and beforehand adjustment, and DO overshooting was well restrained. The test pond and the contrast pond respectively used a variable universe fuzzy PID controller and a fuzzy PID controller to regulate DO in the ponds, and the DO target value was 7.10 mg/L. In the dynamic response phase, DO response time for the contrast pond extended about 15 min more than the test pond, and the overshooting expanded 2.96 times.
+ After the system entered steady process, the standard deviation, the mean variance, and the maximum error and minimum error enlarged by 3-4 times. The testing results showed that the adjustment process for the test pond had characteristics with fast response, small overshooting, high control precision, and good stability compared with the contrast pond. The adjusting factors for the variable universe fuzzy PID controller better solved contradictions between the quantity of fuzzy control rules and DO control precision, and realized self tuning for PID parameters, and improved dynamic performance, and raised steady accuracy and quality of the fuzzy PID controller. It can effectively restrain many uncertain factors of interference affecting DO stability to meet aquaculture requirements for DO and provide a new control method to solve control problem for complex objects with a nonlinear and large time delay.
+			
+		\subsection*{Design of dynamic information monitoring system for small-sized fishing vessels on inland waterway based on internet of things}
+		In order to standardize the fishery production order and protect the fishing operation safety in the river, the dynamic information monitoring system for small-sized inland waterway fishing vessels was proposed based on the Internet of Things (IOT) application. This system included several technologies: wireless sensor networks, remote information transmission networks, and the terminal fishery monitoring center. In this system, wireless sensor networks were applied to obtain fishery field data, including vessel position signals, monitoring information of electrofishing, and detection information of fishing vessel overload. Vessel position signals were acquired by NovAtel RTK-L1/L2 global positioning system receiver. Based on the principle of high-frequency pulse electric signal detection in water, the sensing circuit was designed to monitor electrofishing illegal operations. The overload detection was executed through pressure sensor installed on ship's load draft mark, which could transform water pressure to fishing vessel draft, and judge accurately the overload. In addition, wireless sensor networks could normalize these sensor data of different types, detect fishing violations automatically, and transmit them to remote information transmission networks. Each fishing vessel was equipped with a wireless sensor network based on ZigBee. It comprised multiple acquisition nodes, multiple route nodes, and a gateway node. Acquisition nodes and route nodes could gather fishery field data of fishing vessels. As an inter-connected network integration access, the gateway node was connected to remote information transmission networks. Remote information transmission networks comprised the mobile communications network of GPRS (general packet radio service)/GSM (global system for mobile communication) and internet. Fishery field data were transmitted by the mobile communication network and internet, and uploaded to the terminal fishery monitoring center through private data link immediately. The purpose of the terminal fishery monitoring center was to identify fishing vessels on the electronic map, monitor fishing violations, and provide assistance to fishery management. This monitoring center contained 5 modules, which were user administration, location display, illegal alarm, data analysis, and data storage. The module of user administration was applied to the authorization of the user's identity and the maintenance of the system. The field information of fishing vessels could be displayed immediately by the module of location display and illegal alarm. The location database and the illegal case database had also been set up for storage and analysis in monitoring center, in order to query and analyze historical fishery data conveniently. The software system of terminal fishery monitoring center, including LabVIEW2013, ArcGIS Engine 10.2 and SQL server 2008, could provide fishery administrators with a visual image of real-time data monitoring platform. At last, the experiment was conducted on Jialing River in Beibei District, Chongqing Municipality, China. Particularly, in the test on electrofishing monitoring, the sensor was installed on the stern of the small-sized fishing vessel (No.YBY 077). The electronic fishing equipment, with 300 W average power, 100 V voltage effective value and 50 KHz frequency, worked in water at a distance from 6.21 to 1.23 m outside the fishing vessel. And the results demonstrated that the electrofishing monitoring sensor effectively detected fishing illegal operations within 5 m. In another test, 2 fishing vessels (No.YBY 018, No.YBYF 013) were loaded with sandbags in different distribution and different weight, to verify the validity of the overload detection sensor. And the results showed that these sensors could not only correctly distinguish the overload condition, but also accurately judge the uneven load state of fishing vessel. Also this dynamic information monitoring system was tested in Beibei District for more than 2 months (from January to February in 2015), and the hardware and software system could work cooperatively and stably. This dynamic information monitoring system for small-sized inland waterway fishing vessels provides simple and effective monitoring information to the fishery administrators, which is helpful to improve work efficiency and solve some problems of fishery management of inland waters in China.
+
+\newpage
+% chap 3
+
+\begin{center} %center align the text
+\section*{Chapter 3} 
+\section*{Methodology}
+\end{center} 
+
+% \textbf{Introduction}
+\section*{Introduction}
+This chapter captures the detailed combination of the best practices, procedures, rules and guidelines observed to ensure completion and proper functioning of the project. Let’s discuss what a microcontroller is.
+\paragraph*{}
+	Microcontrollers are found in almost all modern-day electronic devices. Washing machines, CD/DVD players, digital watches, mobile phones, microwave ovens are devices that function with the aid of microcontrollers. These devices can be said to be similar to a personal computer. While personal computers interact with humans, microcontrollers interact with other machines. Microcontrollers were developed to make processes automated and are widely used in embedded systems.
+\paragraph*{}	
+	A microcontroller, from its name, is a micro integrated circuit chip (IC) that is used to control other devices and machines. It is simply a microprocessor with a Random-Access Memory (RAM), a Read Only Memory (ROM) and Input Output ports.
+\subsection*{Development Cycle}	
+\paragraph*{} 
+Suitable for a number of reasons, the iterative design model was chosen for the project. The implementation of this model was suitable due to challenges encountered and the model fairly improved the project as better working plans were produced. 
+\paragraph*{}
+	The model enables the development of working functionality easily and quickly in the life cycle as it assumes subsequent release of the models adds function to the previous release. The iterative design model can be divided into four major phases. They are requirement management, Design and development, Testing, Implementation
+\subsection*{Requirement Management}
+\paragraph*{}
+This phase involves capturing of requirements, putting them under specific categories and most importantly articulating the project needs in a formal and precise way. Project objectives may change or new one maybe added for testing purposes.
+\subsection*{Design and Development}
+\paragraph*{}
+This phase involves establishing the overall system architecture by allocating requirements to hardware systems. Improved version of project is usually produced after each iteration.
+\subsection*{Testing}
+\paragraph*{}
+In this phase, individual components are tested and again tested as an integrated system.  Debugging processes are identified for further iteration of the improved version produced. Thus, enabling easier bug fixing in the next iteration.
+\subsection*{Implementation}
+\paragraph*{}
+From the information gathered during the requirement management and the design phases, the actual work is established and a final outcome is produced in this phase. Programming and debugging are considered as core activities or tasks.
+\newpage
+\begin{figure}
+\includegraphics[scale=1,width=6in]{model.jpg}
+\begin{center}
+\textit{\textbf{Figure 1:} Iterative Design Model}
+\end{center} 
+\end{figure}
+
+\subsection*{Model description of project Kits}
+\begin{itemize}
+
+\item	An Arduino mega Board.
+\item	Breadboard.
+\item	(16x2) LCD display.
+\item	The 2 in one Temperature and PH sensor- E-201-C.
+\item	The Turbidity Sensor- SEN0189.
+\item	An ultrasonic Sensor.
+\item	9V battery (Energizer Battery).
+
+\end{itemize}
+\subsection*{Arduino Mega Board}
+\paragraph*{}
+The Arduino MEGA ADK is a microcontroller board based on the ATmega2560. It has a USB host interface to connect with Android based phones, based on the MAX3421e IC. It has 54 digital input/output pins (of which 15 can be used as PWM(Pulse Wave Modulator) outputs), 16 analog inputs, 4 UARTs (hardware serial ports), a 16 MHz crystal oscillator, a USB connection, a power jack, an ICSP header, and a reset button.
+\begin{figure}
+\paragraph*{}
+\includegraphics[scale=1]{mega.jpg}   %adding images
+\begin{center}
+\textit{\textbf{Figure 2:} Arduino Mega}   %add figure numbers
+\end{center}
+ 
+\end{figure}
+  
+\subsection*{BreadBoard}
+\paragraph*{}
+A breadboard is a construction base for prototyping of electronics. A modern solderless breadboard consists of a perforated block of plastic with numerous tin-plated phosphor bronze or nickel silver alloy spring clips under the perforations. The clips are often called tie points or contact points. The number of tie points is often given in the specification of the breadboard. Interconnecting wires and the leads of discrete components (such as capacitors, resistors, and inductors) can be inserted into the remaining free holes to complete the circuit. Where ICs are not used, discrete components and connecting wires may use any of the holes. The edge of the board has male and female notches so boards can be clipped together to form a large breadboard.
+\subsection*{16x2 Liquid Crystal Display}
+\paragraph*{	}
+This project used LED and LCD 16x2 as a display system. The LEDs will turn on based on the amount of water level that was sensed by the sensor. The LCD 16x2 has two rows and each row can display 16 characters. First row will display the current aspect of water quality being measured and the second row displays the value of the data.
+\newpage
+\begin{figure}
+\paragraph*{}
+\includegraphics[scale=1,height=3in]{lcd.jpg}   %adding images
+\begin{center}
+\textit{\textbf{Figure 3:} 16x2 LCD } %add figure numbers
+\end{center}
+\end{figure}
+
+\subsection*{The 2 in one Temperature and PH sensor}
+\paragraph*{}
+The temperature sensor works great with any microcontroller using a single digital pin, can even connect multiple ones to the same pin. Usable with 3.0-5.0V systems. The analog pH meter, specially designed for Arduino controllers and has built-in simple, convenient and practical connection and features. It has an LED which works as the Power Indicator, a BNC connector and PH2.0 sensor interface. To use it, just connect the pH sensor with BNC connector, and plug the PH2.0 interface into the analog input port.
+\begin{figure}
+\includegraphics[scale=0.4]{tem&ph.png}   %adding images
+\begin{center}
+\textit{\textbf{Figure 4:}  Temperature and PH sensor } %add figure numbers
+\end{center}
+\end{figure}
+\newpage
+\subsection*{Turbidity Sensor}
+\paragraph*{}
+ The turbidity sensor detects water quality by measuring level of turbidity. It is able to detect suspended particles in water by measuring the light transmittance and scattering rate which changes with the amount of total suspended solids (TSS) in water. As the TTS increases, the liquid turbidity level increases. The sensor has both analog and digital signal output modes. You can select the mode since threshold is adjustable in digital signal mode. Turbidity sensors can be used in measurement of water quality in rivers and streams, wastewater and effluent measurements, sediment transport research and laboratory measurements.
+
+\begin{figure}
+\includegraphics[scale=0.4,width=6in,height=3in]{turbidity.jpg}   %adding images
+\begin{center}
+\textit{\textbf{Figure 5:}  Turbidity sensor}  %add figure numbers
+\end{center}
+\end{figure}
+\newpage
+\subsection*{Ultrasonic Sensor}
+\paragraph*{}
+The HC-SR04 Ultrasonic Module has 4 pins, Ground, VCC, Trig and Echo. The Ground and the VCC pins of the module needs to be connected to the Ground and the 5 volts pins on the Arduino Board respectively and the trig and echo pins to any Digital I/O pin on the Arduino Board. It emits an ultrasound at 40 000 Hz which travels through the air and if there is an object or obstacle on its path It will bounce back to the module. Considering the travel time and the speed of the sound you can calculate the distance.
+
+\begin{figure}
+\includegraphics[scale=0.4]{ultra.jpg}   %adding images
+\begin{center}
+\textit{\textbf{Figure 6:} Ultrasonic sensor}  %add figure numbers
+\end{center}
+\end{figure}
+\newpage
+\subsection*{9V Power Supply(Battery)}
+\paragraph*{}
+This project uses a regulated 5V from battery that supplies 9V voltage. 5V power supply connected to main board, sensor board, LCD and relay board. 
+\newpage
+\begin{figure}
+\includegraphics[scale=0.4,height=3in,width=4in]{bat.jpg}   %adding images
+\begin{center}
+\textit{\textbf{Figure 6:} 9V battery } %add figure numbers
+\end{center}
+\end{figure}
+\newpage
+\subsection*{Block diagram}
+
+\begin{figure}
+\includegraphics[scale=0.4]{block.jpg}   %adding images
+\begin{center}
+\textit{\textbf{Figure 7:} Block diagram } %add figure numbers
+\end{center}
+\end{figure}
+\newpage
+\subsection*{Architectural Overview}
+
+\begin{figure}
+\includegraphics[scale=0.4]{arch.jpg}   %adding images
+\begin{center}
+\textit{\textbf{Figure 8:} Architectural Overview}  %add figure numbers
+\end{center}
+\end{figure}
+\newpage
+
+\subsection*{Software Implemenation}
+\paragraph*{}
+This was another important part of the project. This aspect captures code written process, in our case, the Arduino IDE was used during the code writing stage for the microcontroller and the necessary hardware components since it is the easiest environment to code with. Again, our web interface was designed using visual studio code was used due to its easy rendering of codes as they are written.  
+
+\subsection*{Requirement Gathering and Analysis}
+\paragraph*{}
+During this stage, our main aim is to gain knowledge about the various hardware devices in place. Again, the techniques that would enable us bridge or establish a connection between our Arduino board and the web interface, how to upload our data reading unto our web interface in the require format.
+
+\subsection*{Functional Requirements}
+\paragraph*{}
+The project aims to develop a water monitoring system that measures some aspects of water quality. The system should be able to do the following:
+\begin{itemize}
+\item   Take correct reading of the set aspects of water quality
+\item	Display the values read
+\item	Upload data values unto our web interface
+\item	Allow users view the data
+\end{itemize}
+
+\subsection*{Non-functional Requirements}
+\paragraph*{}
+Non-functional requirement describes how the system works. The 
+system should be: 
+\begin{itemize}
+\item User friendly web interface.
+\item Basic interpretation of data over a given period.
+\item Provide information on the importance of the values read.
+\item Web interface should work well on most devices.
+\end{itemize}
+
+\subsection*{Language Justification}
+\paragraph*{}
+The choice of language for the project was the C language for a number of reasons. Firstly, the C language was easier to use when programming the microcontroller. Secondly, the team’s comfortable understanding of the language. Again, the availability of assistance when needed. For the web interface, html, CSS and python was used due to availability of tools, assistance and easier understanding of the language’s syntax. Along with python, SQLite was implemented for the database design.
+\subsection*{Design and Development}
+\paragraph*{}
+This project makes use of the conceptual view of the system and real development system. Many program or codes are gradually improved upon to ensure the proper functioning of hardware components. Versions of the web interface are developed, the easiest and most user friendly is selected as agreed by the team. Sequence diagram along with use case diagrams were considered for the sake of the project.
+\subsection*{System Modeling- Unified Modeling Diagram}
+\paragraph*{}
+Unified Modeling Language is a standard for visualizing, constructing, specifying and documenting the artifacts of software systems. It was created by the Object Management Group (OMG). In January,1997, UML 1.0 specification draft was proposed on OMG. It was started to captured the behavior of the non-software system and complex software and has now become an OMG standard (Tutorials point, 2017). 
+UML is a standard notation for the modelling of real-world objects as a first step in developing an object-oriented design methodology. Its notation is derived from and unifies the notations of three object-oriented design and analysis methodologies. UML is actually a combination of several notations: object-oriented design, object modeling technique and object-oriented software engineering. The Unified Modeling Language uses the strengths of these approaches to present a more consistent methodology that is easier to use. UML represents best practices for building and documenting the facets of software and business system modeling. UML is a common language for business analysis, software architects and developers used it to describe, specify, design and document existing or new business process, structure and behavior of artifacts of software systems. UML is a standard modeling language not a software development process. It provides guidance as to the order of a team’s activities, specifies what artifacts should be developed, directs the task of individual developers and the team as a whole offers criterion for monitoring and measuring a project’s products and activities through the use of UML models such as Use Case diagrams, Class Diagrams, Sequence Diagrams and Activity Diagrams.
+\subsection*{Sequence Diagram}
+\paragraph*{}
+The sequence diagram is used to define a sequence of events that are necessary to produce an outcome. Sequence diagrams are the most popular UML artifact for dynamic modelling, which focuses on identifying the behavior within your system. Other dynamic modelling techniques include activity diagramming, communication diagramming, timing diagramming and interaction overview diagramming. Sequence diagrams along with class diagrams and physical data model are in my opinion the most important design level models for modern business application development. //
+Sequence diagrams are necessary in software development processes due to the following:
+\begin{itemize}
+\item  They help detect logic, interface and architectural problems very early since an overview of what the system will do in details is provided before the implementation of the components. 
+\item They help describe the expected behavior of the system and form a foundation for the development of system architectures with robust interface.
+\end{itemize} 
+ 
+ \newpage
+\begin{figure}
+\includegraphics[scale=0.4]{Sequence Diagram1.jpg}   %adding images
+\begin{center}
+\textit{\textbf{Figure 9:} Sequence diagram}  %add figure numbers
+\end{center}
+\end{figure} 
+
+The sequence diagram enables us to understand what happens when the user logs into the web interface. The system checks for the correct credentials in the database before granting access to the data logged.
+
+\subsection*{Use Case Diagram}
+\paragraph*{}
+Use Case diagram is a graphical depiction of the interactions among the elements of a system. A use case is a methodology used in system analysis to clarify, identify and organize system requirements. Use Case diagrams are employed in UML a standard notation for the modeling of a real-world objects and systems. System objectives can include planning overall requirements, validating a hardware design, testing and debugging a software product under development, creating an online help reference or performing a consumer service-oriented task.
+\paragraph*{}
+Use cases also focus on user goals, but the emphasis here is on a user-system interaction rather than the user's task itself. Although their focus is specifically on the interaction between the user (called an "actor'') and a software system, the stress is still very much on the user's perspective, not the system's. The term "scenario" is also used in the context of use cases. In this context, it represents one path through the use case, i.e. one particular set of conditions. This meaning is consistent with the definition given above in that they both represent one specific example of behavior.
+
+\newpage
+\begin{figure}
+\includegraphics[scale=0.4]{Use Case Diagram.jpg}   %adding images
+\begin{center}
+\textit{\textbf{Figure 10:} Use case diagram}  %add figure numbers
+\end{center}
+\end{figure} 
+From the figure above, we have the user, the physical system and the web interface and the use cases or the blocks of operations which are actions that the user, the physical system and the web interface can perform along with lines that indicate what each can do.//
+From the diagram, the system has the following functionalities:
+\begin{itemize}
+\item  	Read current water: the system checks the water level in the tank.
+\item	Monitoring the system: the system includes a 16x2 LCD that displays the readings visually. The readings include water level values, temperature, PH and turbidity information.
+\item	Storage: the system is able to store the values taken by recording them to a file and also uploading them to a database 
+\item	Notification: the system includes a buzzer that sounds when readings are below a set value for each water quality aspect measured. The system includes a web interface that also displays readings recorded over a period of time.
+\item	The user can view the data recorded, interpret it using external tools and retrieve the data file through the web interface.
+
+\end{itemize}
+
+\subsection*{Testing and Evaluation}
+\paragraph*{}
+The system was tested thoroughly throughout the development phase since the iterative design model requires that the debugging process is identified for further iteration. Alpha and Beta testing were use in relation to this system. Alpha testing was done after the design and development phase during which lots of errors were encountered. Through the Beta testing, errors and bugs that were experienced were solved using each step of the iteration process. The web interface was tested using different browser to ensure proper functioning.
+
+\subsection*{Conclusion}
+\paragraph*{}
+In this chapter, the iterative design model was selected as methods to be observed to ensure completion and proper functioning of the project. The model assumes that some working functionality can be developed quickly and early in the project life cycle.
+\paragraph*{}
+	The project introduced some forms of system models as UML diagrams, sequence diagrams and Use Cases that were derived during the design process to describe the detail structure, relationships and interactions between users and objects in the system and how system processes are performed
+
+			
+			
+			
+		
+\bibliographystyle{apacite}
+\bibliography{references}
+
+	
+\end{document}
+
+
+
+
+
+%%%%%%%%%%% LaTeX Tuts %%%%%%%%%%%%%%%%
+%	
+%	L ATEX (pronounced lay-tek) is a document preparation system for producing professional-looking documents,
+% it is not a word processor.
+%
+%based on TEX, a typesetting system designed by Donald Knuth in 1978 for high quality digital typesetting.
+% 
+%  TEX is a low-level language that computers can work with
+% 
+% It is particularly suited to producing long, structured documents, and is very good at typesetting equations.
+% 
+% It is available as free software for most operating systems
+% 
+% ATEX is a very diﬀerent style of working. Microsoft Word is ‘What You See Is What You Get’ (WYSIWYG), this 				means that you see how the ﬁnal document will look as you are typing. When working in this way you will 					probably make changes to the document’s appearance (such as line spacing, headings, page breaks) as you 					type. With L ATEX you do not see how the ﬁnal document will look while you are typing it — this allows you to 			concentrate on the content rather than appearance.
+
+%				tips
+%		\\ -> newline with para
+%		one linespace -> new line
+%		$ math_mode $
+%		$$ math_mode_blockline $$s
+%		\textit(italize)
+%		\textbf(bold)
+%		\texttt(weblink)
+%
+%		\begin(large) ble bla bla \end(large)
+%		\begin(Large) ble bla bla \end(Large)
+%		\begin(huge) ble bla bla \end(huge)
+%		small
+%		tiny
+%
+%		\begin(center) i am centered \end(center)
+%		\begin(flushleft) left justified \end(flushleft)
+%		flushright
+%
+%		creating title section - 4 things
+%		\title
+%		\author
+%		\date(\today)
+%		\maketitle
+%%%%%%%%%%%%%%% End of Tut %%%%%%%%%%%%%%

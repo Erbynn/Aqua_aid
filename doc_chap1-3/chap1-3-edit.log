@@ -1,0 +1,442 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.26)  28 JAN 2019 16:27
+entering extended mode
+**./chap1-3-edit.tex
+(chap1-3-edit.tex
+LaTeX2e <2018-12-01>
+
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cl
+s"
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size12.clo
+"
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geomet
+ry.sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval
+.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpd
+f.sty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifvt
+ex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxet
+ex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geomet
+ry.cfg"))
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphi
+cx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphi
+cs.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.s
+ty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\gr
+aphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pd
+ftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty
+"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count91
+\float@exts=\toks16
+\float@box=\box27
+\@float@everytoks=\toks17
+\@floatcapt=\box28
+)
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cite\chapterbib
+.sty"
+\c@inputfile=\count92
+Package: chapterbib 2010/09/18  v 1.17
+)
+No file chap1-3-edit.aux.
+\openout1 = `chap1-3-edit.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pdf
+.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count93
+\scratchdimen=\dimen113
+\scratchbox=\box29
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen114
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
+\everyMPtoPDFconversion=\toks19
+)
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstop
+df-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infw
+arerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext
+.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvde
+finekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxc
+mds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvopti
+ons.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvse
+tkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\etex
+cmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\iflu
+atex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\pdft
+excmds.sty"
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 48.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 48.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 48.
+<ucclogo.jpg, id=1, 200.75pt x 192.72pt>
+File: ucclogo.jpg Graphic file (type jpg)
+<use ucclogo.jpg>
+Package pdftex.def Info: ucclogo.jpg  used on input line 58.
+(pdftex.def)             Requested size: 71.13188pt x 68.28815pt.
+ [1
+
+{C:/Users/J-theory/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./ucclog
+o.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+[1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 118.
+
+("C:\Users\J-theory\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 118.
+ [4]
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--160
+
+ []
+
+[7
+
+] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 173.
+[9]
+Overfull \hbox (15.08284pt too wide) in paragraph at lines 177--177
+[]\OT1/cmr/bx/n/14.4 Energy-efficient Au-to-matic Mon-i-tor-ing Sys-tem for Aqu
+a-cul-ture based
+ []
+
+[10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21]
+<model.jpg, id=80, 758.835pt x 297.11pt>
+File: model.jpg Graphic file (type jpg)
+<use model.jpg>
+Package pdftex.def Info: model.jpg  used on input line 256.
+(pdftex.def)             Requested size: 758.83316pt x 297.10927pt.
+<mega.jpg, id=81, 212.29312pt x 134.75343pt>
+File: mega.jpg Graphic file (type jpg)
+<use mega.jpg>
+Package pdftex.def Info: mega.jpg  used on input line 279.
+(pdftex.def)             Requested size: 212.2926pt x 134.7531pt.
+ [22 <./model.jpg>]
+[23 <./mega.jpg>]
+<lcd.jpg, id=89, 169.38281pt x 168.63pt>
+File: lcd.jpg Graphic file (type jpg)
+<use lcd.jpg>
+Package pdftex.def Info: lcd.jpg  used on input line 295.
+(pdftex.def)             Requested size: 169.38239pt x 168.62958pt.
+<tem&ph.png, id=90, 1053.9375pt x 451.6875pt>
+File: tem&ph.png Graphic file (type png)
+<use tem&ph.png>
+Package pdftex.def Info: tem&ph.png  used on input line 305.
+(pdftex.def)             Requested size: 421.56754pt x 180.67178pt.
+ [24 <./lcd.jpg>]
+<turbidity.jpg, id=95, 338.76563pt x 225.84375pt>
+File: turbidity.jpg Graphic file (type jpg)
+<use turbidity.jpg>
+Package pdftex.def Info: turbidity.jpg  used on input line 316.
+(pdftex.def)             Requested size: 135.50385pt x 90.33589pt.
+ [25 <./tem&ph.png (PNG copy)>]
+<ultra.jpg, id=99, 526.96875pt x 526.96875pt>
+File: ultra.jpg Graphic file (type jpg)
+<use ultra.jpg>
+Package pdftex.def Info: ultra.jpg  used on input line 327.
+(pdftex.def)             Requested size: 210.78375pt x 210.78375pt.
+ [26 <./turbidity.jpg>] [27 <./ultra.jpg>]
+<bat.jpg, id=106, 71.0655pt x 106.9596pt>
+File: bat.jpg Graphic file (type jpg)
+<use bat.jpg>
+Package pdftex.def Info: bat.jpg  used on input line 338.
+(pdftex.def)             Requested size: 28.42567pt x 42.78307pt.
+<block.jpg, id=107, 742.775pt x 398.48875pt>
+File: block.jpg Graphic file (type jpg)
+<use block.jpg>
+Package pdftex.def Info: block.jpg  used on input line 347.
+(pdftex.def)             Requested size: 297.10474pt x 159.39267pt.
+ [28 <./bat.jpg>]
+<arch.jpg, id=111, 682.55pt x 385.44pt>
+File: arch.jpg Graphic file (type jpg)
+<use arch.jpg>
+Package pdftex.def Info: arch.jpg  used on input line 356.
+(pdftex.def)             Requested size: 273.01517pt x 154.17326pt.
+ [29 <./block.jpg> <./arch.jpg>]
+[30] [31] [32]
+
+LaTeX Warning: File `Sequence Diagram1.jpg' not found on input line 413.
+
+<Sequence Diagram1.jpg, id=125, 748.7975pt x 387.4475pt>
+File: Sequence Diagram1.jpg Graphic file (type jpg)
+<use Sequence Diagram1.jpg>
+Package pdftex.def Info: Sequence Diagram1.jpg  used on input line 413.
+(pdftex.def)             Requested size: 299.51369pt x 154.97624pt.
+[33 <./Sequence Diagram1.jpg>]
+
+LaTeX Warning: File `Use Case Diagram.jpg' not found on input line 429.
+
+<Use Case Diagram.jpg, id=129, 485.815pt x 427.5975pt>
+File: Use Case Diagram.jpg Graphic file (type jpg)
+<use Use Case Diagram.jpg>
+Package pdftex.def Info: Use Case Diagram.jpg  used on input line 429.
+(pdftex.def)             Requested size: 194.32256pt x 171.03596pt.
+[34 <./Use Case Diagram.jpg>]
+No file chap1-3-edit.bbl.
+[35] (chap1-3-edit.aux) ) 
+Here is how much of TeX's memory you used:
+ 2124 strings out of 492946
+ 31960 string characters out of 3124934
+ 109096 words of memory out of 3000000
+ 5993 multiletter control sequences out of 15000+200000
+ 11074 words of font info for 38 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,7n,25p,4456b,282s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/J-theory/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/J-theory/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/J-theory/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/
+Users/J-theory/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmcsc10.pfb><C:/Users/J-theory/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb><C:/Users/J-theory/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/J-theory/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/J-theory/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
+Users/J-theory/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmti12.pfb>
+Output written on chap1-3-edit.pdf (36 pages, 1005536 bytes).
+PDF statistics:
+ 165 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+
